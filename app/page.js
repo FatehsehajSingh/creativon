@@ -14,23 +14,37 @@ export default function Home() {
         </div>
       </div>
       <div className="bg-white h-1 opacity-10"></div>
-      <div className="text-white container mx-auto">
-        <h1 className=" text-2xl font-bold text-center my-14">Your Fans can buy you some snacks</h1>
-        <div className="flex gap-4 justify-around text-center">
-          <div className="item space-y-3">
+
+      <div className="text-white container mx-auto pb-32 pt-14">
+        <h2 className=" text-3xl font-bold text-center mb-14">Your Fans can buy you some snacks</h2>
+        <div className="flex justify-around text-center">
+          <div className="item space-y-3 flex flex-col items-center justify-center">
             <img className="bg-slate-400 rounded-full p-2 text-black" width={80} src="/man.gif" alt="man on a desk gif" />
-            <p className="font-bold">Fund yourself</p>
+            <p className="font-bold">Fans want to help</p>
+            <p className=" text-center">Your fans are availaible to help you</p>
           </div>
-          <div className="item space-y-3">
+          <div className="item space-y-3 flex flex-col items-center justify-center">
             <img className="bg-slate-400 rounded-full p-2 text-black" width={80} src="/coin.gif" alt="coin gif" />
-            <p className="font-bold">Fund yourself</p>
+            <p className="font-bold">Fans want to help</p>
+            <p className=" text-center">Your fans are availaible to help you</p>
           </div>
-          <div className="item space-y-3">
+          <div className="item space-y-3 flex flex-col items-center justify-center">
             <img className="bg-slate-400 rounded-full p-2 text-black" width={80} src="/group.gif" alt="man on a desk gif" />
             <p className="font-bold">Fans want to help</p>
-            <p>Your fans are availaible to help you</p>
+            <p className=" text-center">Your fans are availaible to help you</p>
           </div>
         </div>
+      </div>
+
+            <div className="bg-white h-1 opacity-10"></div>
+
+
+      <div className="text-white container mx-auto flex flex-col text-center justify-center pb-32 pt-14">
+                <h2 className=" text-3xl font-bold text-center mb-14">Learn More About Us</h2>
+
+              {/* <iframe className="h-screen w-10/12" src="https://www.youtube.com/embed/CF52N-w4anI?si=G_JINVwYOnOa-jTt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> */}
+
+      
       </div>
     </>
   );
