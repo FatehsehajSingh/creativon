@@ -7,6 +7,7 @@ import GitHubProvider from 'next-auth/providers/github'
 import mongoose from 'mongoose'
 import User from '@/models/user'
 import Payment from '@/models/payment'
+import connectDB from '@/app/db/connenctDB'
 
 export const authoptions= NextAuth({
   providers: [
@@ -36,31 +37,34 @@ export const authoptions= NextAuth({
   ],
   callbacks: {
   async signIn({ user, account, profile, email, credentials }) {
+
+    await connectDB()
   
     if(account.provider == "github"){
-      const client = await mongoose.connect("mongodb://localhost:27017/snack")
 
-      const currentUser = await User.findOne({email:email})
+      const currentUser = await User.findOne({email:user.email})
       if(!currentUser){
 
-        const newUser = new User ({
-          email:email,
+        const newUser = await User.create({
+          email:user.email,
           
-          username:email.split("@")[0],
+          username:user.email.split("@")[0],
+          
          
         })
-        await newUser.save()
-        user.name =newUser.username
+     
       }
-      else{
-                user.name = currentUser.username
-
-      }
+    
       
       return true;
     }
-  }
-}
-})
+  },
+      async session({ session, user, token }) {
+        const dbUser = await User.findOne({email: session.user.email})
+        session.user.name = dbUser.username
+        return session
+      },
+    } 
+  })
 
 export {authoptions as GET ,authoptions as POST}
