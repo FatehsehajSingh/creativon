@@ -18,7 +18,7 @@ function Login() {
 
     return (
         <div className='mx-auto container py-14 text-white '>
-            <h1 className='text-center font-bold text-3xl'>Login to Get Your fans to support you</h1>
+            <h1 className='text-center font-bold text-3xl'>Login to Get Started</h1>
 
             <div className="flex flex-col gap-2 min-h-screen  items-center p-10">
                 <button
