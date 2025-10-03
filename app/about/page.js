@@ -45,8 +45,8 @@ const About = () => {
         <section className="mb-12">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="order-2 md:order-1">
-              <img
-                src="https://res.cloudinary.com/jerrick/image/upload/d_642250b563292b35f27461a7.png,f_jpg,fl_progressive,q_auto,w_1024/abunkmupzr3v6gnaxmtk.jpg"
+              <
+               img src="https://res.cloudinary.com/jerrick/image/upload/d_642250b563292b35f27461a7.png,f_jpg,fl_progressive,q_auto,w_1024/abunkmupzr3v6gnaxmtk.jpg"
                 alt="Creator receiving support"
                 className="w-full rounded-lg shadow-lg"
               />

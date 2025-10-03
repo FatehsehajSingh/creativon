@@ -58,7 +58,7 @@ function Navbar() {
               </button>
 
               <div
-                className={`absolute right-0 mt-2 w-44 bg-white text-gray-800 rounded-lg shadow-lg ${
+                className={`absolute right-0 mt-2 w-44 bg-slate-700 text-white rounded-lg shadow-lg ${
                   showdropdown ? "block" : "hidden"
                 }`}
               >
@@ -66,7 +66,7 @@ function Navbar() {
                   <li>
                     <Link
                       href="/dashboard"
-                      className="block px-4 py-2 hover:bg-gray-100"
+                      className="block px-4 py-2 hover:bg-slate-500"
                     >
                       Dashboard
                     </Link>
@@ -74,7 +74,7 @@ function Navbar() {
                   <li>
                     <Link
                       href={`/${session.user.name}`}
-                      className="block px-4 py-2 hover:bg-gray-100"
+                      className="block px-4 py-2 hover:bg-slate-500"
                     >
                       Your Page
                     </Link>
@@ -82,7 +82,7 @@ function Navbar() {
                   <li>
                     <button
                       onClick={() => signOut()}
-                      className="w-full text-left px-4 py-2 hover:bg-gray-100"
+                      className="w-full text-left px-4 py-2 hover:bg-slate-500"
                     >
                       Sign Out
                     </button>
