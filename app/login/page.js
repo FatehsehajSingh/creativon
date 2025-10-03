@@ -11,6 +11,7 @@ function Login() {
     const router = useRouter()
 
     useEffect(() => {
+        document.title = "Login - Creativon"
         if (session) {
             router.push('/dashboard')
         }
@@ -154,3 +155,4 @@ function Login() {
 }
 
 export default Login
+

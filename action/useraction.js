@@ -44,8 +44,9 @@ export const fetchpayments = async (username) => {
   try {
     await connectDB();
 
-    let payments = await Payment.find({ to_user: username ,done:true})
-      .sort({ amount: -1 })
+    let payments = await Payment.find({ to_user: username, done: true })
+      .sort({ amount: -1 }) 
+      .limit(10)           
       .lean();
 
     return payments.map((p) => ({
@@ -59,6 +60,7 @@ export const fetchpayments = async (username) => {
     return [];
   }
 };
+
 
 export const updateProfile = async (data, oldusername) => {
     await connectDB()

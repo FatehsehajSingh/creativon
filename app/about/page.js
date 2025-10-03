@@ -1,5 +1,3 @@
-// app/about/page.jsx
-"use client";
 
 import React from "react";
 
@@ -85,3 +83,7 @@ const About = () => {
 };
 
 export default About;
+
+export const metadata = {
+  title: "About - Creativon",
+}

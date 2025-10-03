@@ -4,9 +4,9 @@ import Link from "next/link";
 export default function Home() {
   return (
     <>
-      <div className="flex gap-4 justify-center flex-col items-center text-white h-[44vh]">
-        <div className=" flex gap-3  justify-center items-center font-bold text-5xl">Buy me a snack <span><img width={80} src="/snack.gif" alt="a snack gif" /></span></div>
-        <p>
+      <div className="flex gap-4 justify-center flex-col items-center px-5 md:px-0 text-xs md:text-base text-white h-[44vh]">
+        <div className=" flex gap-3  text-3xl justify-center items-center font-bold md:text-5xl">Buy me a snack <span><img width={80} src="/tea.gif" alt="a tea gif" /></span></div>
+        <p className="text-center">
           A crowdfunding platform where creators get financial support directly from their fans.
         </p>
         <div>
@@ -20,22 +20,22 @@ export default function Home() {
       </div>
       <div className="bg-white h-1 opacity-10"></div>
 
-      <div className="text-white container mx-auto pb-32 pt-14">
+      <div className="text-white container mx-auto pb-32 pt-14 px-10">
         <h2 className=" text-3xl font-bold text-center mb-14">Your Fans can buy you some snacks</h2>
         <div className="flex justify-around text-center">
           <div className="item space-y-3 flex flex-col items-center justify-center">
             <img className="bg-slate-400 rounded-full p-2 text-black" width={80} src="/man.gif" alt="man on a desk gif" />
-            <p className="font-bold">Fans want to help</p>
+            <p className="font-bold text-center">Fans want to help</p>
             <p className=" text-center">Your fans are availaible to help you</p>
           </div>
           <div className="item space-y-3 flex flex-col items-center justify-center">
             <img className="bg-slate-400 rounded-full p-2 text-black" width={80} src="/coin.gif" alt="coin gif" />
-            <p className="font-bold">Fans want to help</p>
+            <p className="font-bold text-center">Fans want to help</p>
             <p className=" text-center">Your fans are availaible to help you</p>
           </div>
           <div className="item space-y-3 flex flex-col items-center justify-center">
             <img className="bg-slate-400 rounded-full p-2 text-black" width={80} src="/group.gif" alt="man on a desk gif" />
-            <p className="font-bold">Fans want to help</p>
+            <p className="font-bold text-center">Fans want to help</p>
             <p className=" text-center">Your fans are availaible to help you</p>
           </div>
         </div>
@@ -47,7 +47,7 @@ export default function Home() {
       <div className="text-white container mx-auto flex flex-col text-center justify-center pb-32 pt-14">
                 <h2 className=" text-3xl font-bold text-center mb-14">Learn More About Us</h2>
 
-              {/* <iframe className="h-scree  n w-10/12" src="https://www.youtube.com/embed/CF52N-w4anI?si=G_JINVwYOnOa-jTt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> */}
+              <iframe  src="https://www.youtube.com/embed/CF52N-w4anI?si=G_JINVwYOnOa-jTt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
       
       </div>
